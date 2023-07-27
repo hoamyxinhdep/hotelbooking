@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BookingHotelPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.Orders</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.Accounts</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.ProductRating</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.Category</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.Roles</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.Product</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.Information</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.Orderdetails</class>
+    <class>nashtech.ass.phuochg.coffeeshop.dto.CartItem</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://;databaseName=assignment01"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>
